@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!--Контент-->
+    
+    <main class="main">
+        <!--Видеоплеер-->
+        <section class="video-section">
+            <video class="player" controls>
+                <source src="images/sample-5s.mp4" />
+            </video>
+            <div>
+                <button onclick = "play()">Play</button>
+                <button onclick = "pause()">Pause</button>
+                <button onclick = "mute()">Mute</button>
+            </div>
+        </section>
+
+        <aside class="chat-section">
+            <!--Здесь будет отображаться чат-->
+            <div class = "chat">
+                
+            </div>
+            <form class="chat-create-message">
+                <div class="chat-input">
+                    <label for="message"></label>
+                    <input  id = "message" type="text" placeholder="Писать тут">
+                </div>
+            </form>
+        </aside>
+
+    </main>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
